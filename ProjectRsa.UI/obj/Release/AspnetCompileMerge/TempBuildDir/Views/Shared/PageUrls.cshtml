@@ -1,0 +1,14 @@
+﻿@model ProjectRsa.UI.Models.ServerPageModel
+
+<div id="pageurls" class="row">
+    @if(Model.Urls != null)
+    {
+        foreach (var url in Model.Urls)
+        {
+            <div class='url custom-url' data-url='@url'>
+                <span class='url-span'>@url</span>
+                <span title='Remove this URL' class='glyphicon glyphicon-remove-circle url-remove pull-right' onclick="removeSite('@url')"></span>
+            </div>
+        }
+    }
+</div>

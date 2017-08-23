@@ -1,0 +1,45 @@
+﻿@model ProjectRsa.UI.Models.ServerPageModel
+
+@if (Model.Results != null)
+{
+    <div class="row" id="results-view">
+        @foreach (var result in Model.Results)
+        {
+            <div class="col-xs-12 col-sm-6 col-md-4 result-view custom-result-view" data-url="@result.Url">
+                <div class="result-template">
+                    @{var trimmedUrl = result.Url.Length > 25 ? result.Url.Substring(0, 25) : result.Url;}
+                    <h4 title="@result.Url">@trimmedUrl</h4>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <img class="img-responsive" src="/content/screenshots/@result.ScreenShotUrl" alt="@result.Url" />
+                        </div>
+                        <div class="col-xs-12">
+                            <h5>Download complete</h5>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-offset-6 col-xs-6 ch">
+                                <span>Result</span>
+                            </div>
+                        </div>
+                        <div class="row odd">
+                            <div class="col-xs-6 th">
+                                <span>Download Time</span>
+                            </div>
+                            <div class="col-xs-6 td1">
+                                <span>@((int)result.PageLoadTime)ms</span>
+                            </div>
+                        </div>
+                        <div class="row odd">
+                            <div class="col-xs-6 th">
+                                <span>Bytes In</span>
+                            </div>
+                            <div class="col-xs-6 td1">
+                                <span>@result.PageBytes</span>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+}

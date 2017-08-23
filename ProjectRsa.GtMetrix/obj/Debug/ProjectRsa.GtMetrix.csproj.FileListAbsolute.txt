@@ -1,0 +1,10 @@
+c:\users\pramod\documents\visual studio 2017\Projects\ProjectRsa\ProjectRsa.GtMetrix\bin\Debug\ProjectRsa.GtMetrix.dll
+c:\users\pramod\documents\visual studio 2017\Projects\ProjectRsa\ProjectRsa.GtMetrix\bin\Debug\ProjectRsa.GtMetrix.pdb
+c:\users\pramod\documents\visual studio 2017\Projects\ProjectRsa\ProjectRsa.GtMetrix\bin\Debug\gtmetrix.dll
+c:\users\pramod\documents\visual studio 2017\Projects\ProjectRsa\ProjectRsa.GtMetrix\bin\Debug\Newtonsoft.Json.dll
+c:\users\pramod\documents\visual studio 2017\Projects\ProjectRsa\ProjectRsa.GtMetrix\bin\Debug\ProjectRsa.AbstractObjects.dll
+c:\users\pramod\documents\visual studio 2017\Projects\ProjectRsa\ProjectRsa.GtMetrix\bin\Debug\ProjectRsa.AbstractObjects.pdb
+c:\users\pramod\documents\visual studio 2017\Projects\ProjectRsa\ProjectRsa.GtMetrix\bin\Debug\Newtonsoft.Json.xml
+c:\users\pramod\documents\visual studio 2017\Projects\ProjectRsa\ProjectRsa.GtMetrix\obj\Debug\ProjectRsa.GtMetrix.csprojResolveAssemblyReference.cache
+c:\users\pramod\documents\visual studio 2017\Projects\ProjectRsa\ProjectRsa.GtMetrix\obj\Debug\ProjectRsa.GtMetrix.dll
+c:\users\pramod\documents\visual studio 2017\Projects\ProjectRsa\ProjectRsa.GtMetrix\obj\Debug\ProjectRsa.GtMetrix.pdb

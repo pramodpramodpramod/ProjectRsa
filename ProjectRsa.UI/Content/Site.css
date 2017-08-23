@@ -1,0 +1,165 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.input-group, .form-control {
+    min-width:100%;
+}
+
+.url{
+    float:left;
+    border: 1px solid #dcdcdc;
+    display: block;
+    border-radius:5px;
+    margin:0 15px 5px 0;
+    font-size:larger;
+    font-weight:bold;
+    color:navy;
+	vertical-align: middle;
+}
+.url:hover {
+    background-color: lightskyblue;
+    color:black;
+    cursor:pointer;
+}
+
+.url .url-span {
+    padding: 8px;
+}
+
+.url-remove{
+    position:relative;
+    top:-12px;
+    right:-12px;
+    color:black;
+}
+.result-template {
+    border: 3px solid skyblue;
+    margin-bottom:25px;
+}
+
+.result-template h4 {
+    font-size:x-large;
+	word-wrap: break-word;
+}
+
+.result-template th {
+    font-weight: bolder;
+}
+
+.result-template .td1, .result-template .td2, .result-template .th {
+    padding: 10px 5px;
+}
+.result-template .td1, .result-template .th {
+    border-right: 1px solid #dcdcdc;
+}
+#wait, .status-pending {
+	padding: 10px;
+}
+
+.td1, .td2 {
+    text-align:center;
+}
+h4{
+    padding-left:10px;
+}
+h5{
+    font-size:large;
+    background-color: #dcdcdc;
+    padding:10px 10px;
+}
+.result-template .th{
+    padding-left: 25px;
+    font-weight:bold;
+}
+.ch {
+    text-align: center;
+    font-weight: bold;
+    border:none;
+}
+
+.sites-bar{
+    margin:0px;
+    background-color:#dcdcdc;
+    padding:20px;
+    margin-bottom:20px;
+}
+
+.url.pass {
+    border:3px solid green;
+}
+.url.inprocess {
+    border: 3px solid burlywood;
+}
+
+.status-div {
+    font-size: small;
+    font-weight: normal;
+}
+.status-div img{
+    padding-left:10px;
+    padding-right:10px;
+}
+#sort-by {
+	padding:5px;
+	margin-right:20px;
+	border-radius:5px;
+}
+.view-options {
+	margin-top:10px;
+    margin-right:10px;
+}
+.url-input {
+	margin-top:20px;
+}
+.all-results {
+    margin-right:10px;
+}
+.mime-type{
+    padding-left:25px;
+}
+
+div.custom-url{
+    border:2px solid;
+    margin:5px 10px;
+}
+div.custom-url:hover {
+    background-color:inherit;
+    cursor:default;
+}
+
+.url-remove{
+    cursor:pointer;
+}
+.custom-result-view .th span {
+    padding-left:20px;
+}
+h1{
+    text-align:center;
+    font-size:x-large;
+}
+a.active{
+    color:white !important;
+    font-size:larger;
+}

@@ -1,0 +1,7 @@
+C:\Users\Pramod\documents\visual studio 2017\Projects\ProjectRsa\ProjectRsa.CustomLibrary\obj\Debug\ProjectRsa.CustomLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Pramod\documents\visual studio 2017\Projects\ProjectRsa\ProjectRsa.CustomLibrary\bin\Debug\ProjectRsa.CustomLibrary.dll
+C:\Users\Pramod\documents\visual studio 2017\Projects\ProjectRsa\ProjectRsa.CustomLibrary\bin\Debug\ProjectRsa.CustomLibrary.pdb
+C:\Users\Pramod\documents\visual studio 2017\Projects\ProjectRsa\ProjectRsa.CustomLibrary\bin\Debug\ProjectRsa.AbstractObjects.dll
+C:\Users\Pramod\documents\visual studio 2017\Projects\ProjectRsa\ProjectRsa.CustomLibrary\bin\Debug\ProjectRsa.AbstractObjects.pdb
+C:\Users\Pramod\documents\visual studio 2017\Projects\ProjectRsa\ProjectRsa.CustomLibrary\obj\Debug\ProjectRsa.CustomLibrary.dll
+C:\Users\Pramod\documents\visual studio 2017\Projects\ProjectRsa\ProjectRsa.CustomLibrary\obj\Debug\ProjectRsa.CustomLibrary.pdb

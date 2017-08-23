@@ -1,0 +1,7 @@
+﻿@model ProjectRsa.UI.Models.ServerPageModel
+
+@if (Model.Results != null)
+{
+    <span>Sort By</span>
+    @Html.DropDownListFor(d=> d.SortBy, Model.AllSortOptions,htmlAttributes: new {id = "sort-by"})
+}

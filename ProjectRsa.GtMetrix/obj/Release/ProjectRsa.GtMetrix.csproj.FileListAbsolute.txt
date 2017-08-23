@@ -1,0 +1,10 @@
+C:\Users\Pramod\documents\visual studio 2017\Projects\ProjectRsa\ProjectRsa.GtMetrix\bin\Release\ProjectRsa.GtMetrix.dll
+C:\Users\Pramod\documents\visual studio 2017\Projects\ProjectRsa\ProjectRsa.GtMetrix\bin\Release\ProjectRsa.GtMetrix.pdb
+C:\Users\Pramod\documents\visual studio 2017\Projects\ProjectRsa\ProjectRsa.GtMetrix\bin\Release\gtmetrix.dll
+C:\Users\Pramod\documents\visual studio 2017\Projects\ProjectRsa\ProjectRsa.GtMetrix\bin\Release\Newtonsoft.Json.dll
+C:\Users\Pramod\documents\visual studio 2017\Projects\ProjectRsa\ProjectRsa.GtMetrix\bin\Release\ProjectRsa.AbstractObjects.dll
+C:\Users\Pramod\documents\visual studio 2017\Projects\ProjectRsa\ProjectRsa.GtMetrix\bin\Release\ProjectRsa.AbstractObjects.pdb
+C:\Users\Pramod\documents\visual studio 2017\Projects\ProjectRsa\ProjectRsa.GtMetrix\bin\Release\Newtonsoft.Json.xml
+C:\Users\Pramod\documents\visual studio 2017\Projects\ProjectRsa\ProjectRsa.GtMetrix\obj\Release\ProjectRsa.GtMetrix.csprojResolveAssemblyReference.cache
+C:\Users\Pramod\documents\visual studio 2017\Projects\ProjectRsa\ProjectRsa.GtMetrix\obj\Release\ProjectRsa.GtMetrix.dll
+C:\Users\Pramod\documents\visual studio 2017\Projects\ProjectRsa\ProjectRsa.GtMetrix\obj\Release\ProjectRsa.GtMetrix.pdb
