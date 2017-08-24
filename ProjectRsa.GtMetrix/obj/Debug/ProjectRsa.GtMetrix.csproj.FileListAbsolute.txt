@@ -8,3 +8,13 @@ c:\users\pramod\documents\visual studio 2017\Projects\ProjectRsa\ProjectRsa.GtMe
 c:\users\pramod\documents\visual studio 2017\Projects\ProjectRsa\ProjectRsa.GtMetrix\obj\Debug\ProjectRsa.GtMetrix.csprojResolveAssemblyReference.cache
 c:\users\pramod\documents\visual studio 2017\Projects\ProjectRsa\ProjectRsa.GtMetrix\obj\Debug\ProjectRsa.GtMetrix.dll
 c:\users\pramod\documents\visual studio 2017\Projects\ProjectRsa\ProjectRsa.GtMetrix\obj\Debug\ProjectRsa.GtMetrix.pdb
+C:\Users\pramod.mohanan\Documents\Visual Studio 2017\Projects\ProjectRsa\ProjectRsa.GtMetrix\bin\Debug\ProjectRsa.GtMetrix.dll
+C:\Users\pramod.mohanan\Documents\Visual Studio 2017\Projects\ProjectRsa\ProjectRsa.GtMetrix\bin\Debug\ProjectRsa.GtMetrix.pdb
+C:\Users\pramod.mohanan\Documents\Visual Studio 2017\Projects\ProjectRsa\ProjectRsa.GtMetrix\bin\Debug\gtmetrix.dll
+C:\Users\pramod.mohanan\Documents\Visual Studio 2017\Projects\ProjectRsa\ProjectRsa.GtMetrix\bin\Debug\Newtonsoft.Json.dll
+C:\Users\pramod.mohanan\Documents\Visual Studio 2017\Projects\ProjectRsa\ProjectRsa.GtMetrix\bin\Debug\ProjectRsa.AbstractObjects.dll
+C:\Users\pramod.mohanan\Documents\Visual Studio 2017\Projects\ProjectRsa\ProjectRsa.GtMetrix\bin\Debug\ProjectRsa.AbstractObjects.pdb
+C:\Users\pramod.mohanan\Documents\Visual Studio 2017\Projects\ProjectRsa\ProjectRsa.GtMetrix\bin\Debug\Newtonsoft.Json.xml
+C:\Users\pramod.mohanan\Documents\Visual Studio 2017\Projects\ProjectRsa\ProjectRsa.GtMetrix\obj\Debug\ProjectRsa.GtMetrix.csprojResolveAssemblyReference.cache
+C:\Users\pramod.mohanan\Documents\Visual Studio 2017\Projects\ProjectRsa\ProjectRsa.GtMetrix\obj\Debug\ProjectRsa.GtMetrix.dll
+C:\Users\pramod.mohanan\Documents\Visual Studio 2017\Projects\ProjectRsa\ProjectRsa.GtMetrix\obj\Debug\ProjectRsa.GtMetrix.pdb

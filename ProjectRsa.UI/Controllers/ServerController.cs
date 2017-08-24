@@ -18,8 +18,12 @@ namespace ProjectRsa.UI.Controllers
             return View(model);
         }
 
-        [HttpPost]
-        // GET: Custom
+		/// <summary>
+		/// handles contents posted from page
+		/// </summary>
+		/// <param name="model"></param>
+		/// <returns></returns>
+		[HttpPost]
         public ActionResult Index(ServerPageModel model)
         {
             model.Urls = model.UrlCsv.Trim(',').Split(',').ToList();
@@ -40,6 +44,11 @@ namespace ProjectRsa.UI.Controllers
             return View(model);
         }
 
+		/// <summary>
+		/// Check for sort parameter, sorts the session results 
+		/// </summary>
+		/// <param name="sort">paramter for sorting</param>
+		/// <returns>View model with sorted results</returns>
         private ServerPageModel GetViewModel(int? sort)
         {
             var model = new ServerPageModel();
@@ -52,6 +61,13 @@ namespace ProjectRsa.UI.Controllers
             }
             return model;
         }
+
+		/// <summary>
+		/// Helper to sort the test results
+		/// </summary>
+		/// <param name="results">result set</param>
+		/// <param name="sort">sort paramter</param>
+		/// <returns>sorted list </returns>
         private List<TestResponse> SortResultsBy(IEnumerable<TestResponse> results, int sort)
         {
             return results.OrderBy(r => sort == 2 ? r.PageBytes : r.PageLoadTime).ToList();

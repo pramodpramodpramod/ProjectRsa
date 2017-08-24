@@ -12,20 +12,34 @@ using ProjectRsa.AbstractObjects;
 
 namespace ProjectRsa.CustomLibrary
 {
+	/// <summary>
+	/// Class that implements the IWebPageTester Interface
+	/// </summary>
     public class CustomTester : IWebPageTester
     {
-        private string _downloadLocation;
+
+		#region private fields
+		private string _downloadLocation;
         private string _screenshotUrlPrefix;
         private TestResponse _testResponse;
-        public CustomTester(string downloadLocation, string screenShotUrlPrefix)
+		#endregion
+
+		#region constructor
+		/// <summary>
+		/// Initiates Custom Tester calss 
+		/// </summary>
+		/// <param name="downloadLocation">physical path where the screen shot image would be stored</param>
+		/// <param name="screenShotUrlPrefix">the api URL to which the url could be applied</param>
+		public CustomTester(string downloadLocation, string screenShotUrlPrefix)
         {
             _downloadLocation = downloadLocation;
             _screenshotUrlPrefix = screenShotUrlPrefix;
         }
-        //screenshot API key bf00597a1e21c182ca629879d0b953d4
-        //https://screenshotlayer.com/dashboard
+		#endregion
 
-        public List<string> GetBrowsers()
+		#region implementation of IWebPageTester methods
+
+		public List<string> GetBrowsers()
         {
             return new List<string> { "Custom" };
         }
@@ -40,6 +54,12 @@ namespace ProjectRsa.CustomLibrary
             return _testResponse;
         }
 
+
+		/// <summary>
+		/// sumbmits the urls passed for basic testing
+		/// </summary>
+		/// <param name="testRequest">parameters for testing</param>
+		/// <returns>A response with a test Id. This can be used to query the results using the GetResult method</returns>
         public SubmitResponse SubmitTest(TestRequestParameter testRequest)
         {
             var testId = Guid.NewGuid().ToString();
@@ -53,9 +73,15 @@ namespace ProjectRsa.CustomLibrary
             return submitResponse;
         }
 
-        private bool SubmitAllTests(string testId, TestRequestParameter testRequest)
+
+		#endregion
+
+		#region Private methods
+
+		private bool SubmitAllTests(string testId, TestRequestParameter testRequest)
         {
             var url = testRequest.Url;
+			//add http protocol if protocol is missing
             if (!testRequest.Url.StartsWith("http"))
                 url = $"http://{testRequest.Url}";
             _testResponse = new TestResponse();
@@ -70,7 +96,7 @@ namespace ProjectRsa.CustomLibrary
                 _testResponse.TestStatus = "Completed";
                 _testResponse.HttpStatusCode = HttpStatusCode.OK;
             }
-            catch (Exception ex)
+            catch (Exception ex) // if an error occurs return false
             {
                 _testResponse.Success = false;
                 _testResponse.TestCompelted = false;
@@ -80,7 +106,8 @@ namespace ProjectRsa.CustomLibrary
             return true;
         }
 
-        private bool GetPageScreenshot(string testId, string url)
+		//uses the screenshot API to get a screen shot of the URL
+        private bool GetPageScreenshot(string testId, string url)  
         {
             using (WebClient client = new WebClient())
             {
@@ -92,7 +119,8 @@ namespace ProjectRsa.CustomLibrary
             return true;
         }
 
-        private bool GetPageStats(string testId, string url)
+		//uses the WebClient class to download contents of a URL and calculates size and download time
+		private bool GetPageStats(string testId, string url)
         {
             using (var webClient = new WebClient())
             {
@@ -106,6 +134,7 @@ namespace ProjectRsa.CustomLibrary
             }
             return true;
         }
+		#endregion
 
-    }
+	}
 }

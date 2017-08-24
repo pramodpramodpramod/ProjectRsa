@@ -12,7 +12,14 @@ namespace ProjectRsa.TestHarness
 {
     class Program
     {
-        static void Main(string[] args)
+
+		#region private variables - in realtime this should be kept outside code
+		private static string _gtMetrixApiKey = "79833eef2ccd3c70f03a7de88b2009e9";
+		private static string _gtMetrixUserName = "pramod.mohanan@hotmail.co.uk";
+		#endregion
+
+
+		static void Main(string[] args)
         {
             var url = "http://www.w3schools.com";
             TestGetMetrix(url);
@@ -20,7 +27,7 @@ namespace ProjectRsa.TestHarness
 
         static void TestGetMetrix(string url)
         {
-            IWebPageTester gtMetrixObject = new GtMetrixTester("79833eef2ccd3c70f03a7de88b2009e9", "pramod.mohanan@hotmail.co.uk");
+            IWebPageTester gtMetrixObject = new GtMetrixTester(_gtMetrixApiKey, _gtMetrixUserName);
             var request = new TestRequestParameter(url);
             var resposne = gtMetrixObject.SubmitTest(request);
 
@@ -38,6 +45,8 @@ namespace ProjectRsa.TestHarness
                 result = gtMetrixObject.GetResult(testId);
                 Console.WriteLine($"Success:{result.Success}. Code: {result.HttpStatusCode}");
                 Console.WriteLine($"Task Status:{result.TaskStatus}.");
+				if (result.Success && result.TestCompelted)
+					break;
                 Console.WriteLine($".....Sleeping for two seconds.....");
                 Thread.Sleep(2000);
             }

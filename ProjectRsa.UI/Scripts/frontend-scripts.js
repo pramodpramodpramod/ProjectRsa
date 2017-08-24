@@ -102,7 +102,7 @@ function getDetailViewForSite(site) {
     detailsImages = detailsImages.replace("{{checklist}}", site.testResult.data.runs["1"].firstView.images.checklist);
     detailsImages = detailsImages.replace("{{waterfall}}", site.testResult.data.runs["1"].firstView.images.waterfall);
     detailsImages = detailsImages.replace("{{connectionView}}", site.testResult.data.runs["1"].firstView.images.connectionView);
-
+	detailsImages = detailsImages.replace("{{externalUrl}}", site.testResult.data.summary);
     var requestItems = ['css', 'flash', 'font', 'html', 'image', 'js', 'other']
     var compiledRequests = "";
     for (var i in requestItems) {
@@ -120,7 +120,7 @@ function getDetailViewForSite(site) {
     var detailsTemplate = config.detailTemplateWrapper;
     detailsTemplate = detailsTemplate.replace("{{detailTemplateRequests}}", compiledRequests);
     detailsTemplate = detailsTemplate.replace("{{detailTemplateImages}}", detailsImages);
-    return detailsTemplate;
+	return detailsTemplate;
 }
 
 function getResultViewForSite(site) {

@@ -22,11 +22,15 @@ function removeSite(url) {
 }
 
 
-$("#submitForTest").click(function () {
+$("#submitForTest").click(function (e) {
     urls = '';
     $(".url-span").each(function () {
         urls += $(this).html() + ",";
-    });
+	});
+	if (urls.length == 0) {
+		e.preventDefault();
+		return false;
+	}
     $("#UrlCsv").val(urls);
 })
 $("#sort-by").change(function () {

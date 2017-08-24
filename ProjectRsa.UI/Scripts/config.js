@@ -184,6 +184,9 @@
                                 <div class="col-xs-12">
                                 <h4>Connection View</h4>
                                     <img class="img-responsive" src="{{connectionView}}" alt="sample image" />
+									<br />
+									<p><a href="{{externalUrl}}">Full report</a></p>
                                 </div>
+
                              `
     }
